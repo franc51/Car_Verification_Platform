@@ -75,8 +75,7 @@ input[type="checkbox"]{
 }
 @media (max-width: 600px) {
   .bifa{
-  
-    height: 30vh;
+    height: 25vh;
     width: 80vw;
   }
   nav {
