@@ -74,6 +74,21 @@ input[type="checkbox"]{
   }
 }
 @media (max-width: 600px) {
+  .bifa{
+  
+    height: 30vh;
+    width: 80vw;
+  }
+  nav {
+    padding: 1.5vh 2vw 0 5vw;
+  }
+  .image{
+    height: 6vh;
+  }
+  .title{
+    font-size: large;
+  }
+  
   nav .menu-btn i{
     display: block;
   }
@@ -82,38 +97,43 @@ input[type="checkbox"]{
   }
   nav ul{
     position: fixed;
-    top: 80px;
+    top: 10vh;
     left: -100%;
     background: rgb(255, 255, 255);
     height: 100vh;
     width: 100%;
     text-align: center;
     display: block;
-    transition: all 0.3s ease;
+    transition: all 0.6s ease;
   }
   #click:checked ~ ul{
     left: 0;
   }
   nav ul li{
-    width: 100%;
-    margin: 40px 0;
+    width: 76%;
+    margin: 7vh 0 0 7vw;
+    
   }
   nav ul li a{
     width: 100%;
     margin-left: -100%;
     display: block;
-    font-size: 20px;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    font-size: 18px;
+    transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background-color: #374bff;
   }
   #click:checked ~ ul li a{
-    margin-left: 0px;
+    margin: 10vw 5vw 10vw 2vh;
   }
   nav ul li a.active,
   nav ul li a:hover{
-    background: none;
+    background-color: #d9d9ff;
+    padding-left: 4vw;
     color: rgb(0, 0, 0);
   }
 }
+
+
 .content{
   position: absolute;
   top: 55%;
