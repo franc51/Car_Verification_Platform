@@ -73,6 +73,18 @@ input[type="checkbox"]{
   }
 }
 @media (max-width: 600px) {
+  .login-form {
+  background: #fff;
+  width: 99vw;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+}
   .bifa{
   
     height: 30vh;
@@ -150,7 +162,7 @@ body {
 
 .login-form {
   background: #fff;
-  width: 500px;
+  width: 40vw;
   margin: 65px auto;
   display: -webkit-box;
   display: flex;
