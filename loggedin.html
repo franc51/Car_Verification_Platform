@@ -4,7 +4,7 @@
    <head>
       <meta charset="utf-8">
       <title>Car Verification Platform</title>
-      <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="loggedin.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
@@ -20,17 +20,92 @@
          <i class="fas fa-bars"></i>
          </label>
          <ul>
-            <li><a class="active" href="#">Home</a></li>
+            <li><a class="active" href="loggedin.html">Home</a></li>
             
             <li><a href="signin.html">Sign Out</a></li>
          </ul>
       </nav>
-      <div class="content">
-         <div>
-            
-         </div>
-        
-      </div>
+      <div class="login-form">
+         <form>
+           <h1>Please insert car data below</h1>
+           <div class="content">
+             <div class="input-field">
+               <input type="text" placeholder="Name of the owner" autocomplete="nope">
+             </div>
+             <div class="input-field">
+               <input type="text" placeholder="vin no." autocomplete="nope">
+             </div>
+             <div text-align="left">
+               <label text-align="left"for="cars">Make</label>
+
+               <select name="cars" id="cars">
+                 <option value="volvo">Volkswagen</option>
+                 <option value="saab">BMW</option>
+                 <option value="mercedes">Mercedes</option>
+                 <option value="audi">Audi</option>
+               </select> 
+             </div>
+             <div class="input-field">
+               <input type="text" placeholder="Model" autocomplete="nope">
+             </div>
+             <div class="input-field">
+               <input type="text" placeholder="Fabrication year" autocomplete="nope">
+             </div>
+             <div class="input-field">
+               <input type="text" placeholder="engine capacity" autocomplete="nope">
+             </div>
+             <div class="input-field">
+               <input type="text" placeholder="maximum mass" autocomplete="nope">
+             </div>
+             <div class="input-field">
+               <input type="text" placeholder="power" autocomplete="nope">
+             </div>
+             <div text-align="left">
+               <label text-align="left"for="cars">Fuel </label>
+
+               <select name="cars" id="cars">
+                 <option value="volvo">Diesel</option>
+                 <option value="saab">Petrol</option>
+                 <option value="mercedes">Electric</option>
+                 <option value="audi">Hybrid</option>
+               </select> 
+             </div>
+             <div class="input-field">
+               <input type="text" placeholder="Technical inspection result" autocomplete="nope">
+             </div>
+
+             <div >Please upload a picture of the car:
+               <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg"><div id="display-image"></div>
+               </div>
+             </div>
+             <div class="action">
+              
+
+               <button>reject</button>
+               
+               <button onclick='foo()'>PASS</button>
+               <script>
+                  function foo(){
+                   alert('Car was succesfully added to database.');
+                  }
+                  </script>
+              </div>
+           </div>
+           
+       
+            </body>
+         </form>
+       </div>
       <footer>Department of Licences and Vehicle Registrations of Romania 2022</footer>
+  <script>
+   const image_input = document.querySelector("#image-input");image_input.addEventListener("change", function() {
+  const reader = new FileReader();
+  reader.addEventListener("load", () => {
+    const uploaded_image = reader.result;
+    document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
+  });
+  reader.readAsDataURL(this.files[0]);
+});
+  </script>
    </body>
 </html>

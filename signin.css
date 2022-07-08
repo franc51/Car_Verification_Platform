@@ -170,10 +170,65 @@ input[type="checkbox"]{
   
 }
 @media (max-width: 600px) {
+  .bifa{
+    height: 31vh;
+    width: 80vw;
+  }
+  nav {
+    padding: 1.5vh 2vw 0 5vw;
+  }
+  
+  .title{
+    font-size: large;
+  }
+  
+  nav .menu-btn i{
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+  }
+  nav ul{
+    position: fixed;
+    top: 10vh;
+    left: -100%;
+    background: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.6s ease;
+  }
+  #click:checked ~ ul{
+    left: 0;
+  }
+  nav ul li{
+    width: 76%;
+    margin: 7vh 0 0 7vw;
+    
+  }
+  nav ul li a{
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 18px;
+    transition: 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background-color: #374bff;
+  }
+  #click:checked ~ ul li a{
+    margin: 10vw 5vw 10vw 2vh;
+  }
+  nav ul li a.active,
+  nav ul li a:hover{
+    background-color: #d9d9ff;
+    padding-left: 4vw;
+    color: rgb(0, 0, 0);
+  }
+
  .login-form {
     background: rgb(255, 255, 255);
     width: 100vw;
-    margin: 30px auto;
+    margin: 20px auto;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -187,7 +242,7 @@ input[type="checkbox"]{
     font-weight: 300;
   }
   .login-form .content {
-    padding: 35px;
+    padding: 25px;
     text-align: center;
   }
   .login-form .input-field {
