@@ -11,13 +11,14 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  color: rgb(61, 92, 92);
+  color: rgb(255, 255, 255);
+  background-color: #003cff;
 }
 nav{
   display: flex;
   height: 10vh;
   width: 100%;
-  background: #2f00ff;
+  background: #003cff;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 25px;
@@ -68,6 +69,10 @@ input[type="checkbox"]{
   display: none;
 }
 @media (max-width: 2000px){
+  #papa {
+    text-align: center;
+    padding-top: 5vh;
+  }
   nav{
     padding: 0 40px 0 50px;
   }
@@ -96,6 +101,9 @@ input[type="checkbox"]{
   }
   .login-form .content {
     padding: 35px;
+    text-align: center;
+  }
+  .login-form .h2 {
     text-align: center;
   }
   .login-form .input-field {

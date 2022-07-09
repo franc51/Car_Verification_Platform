@@ -11,7 +11,8 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  color: rgb(61, 92, 92);
+  color: rgb(255, 255, 255);
+  background-color: #003cff;
 }
 nav{
   display: flex;
@@ -68,6 +69,12 @@ input[type="checkbox"]{
   display: none;
 }
 @media (max-width: 2000px){
+  label {
+    display:grid;
+    color: #000000;
+    display: block;
+    padding-bottom: 1vh;
+  }
   nav{
     padding: 0 40px 0 50px;
   }
@@ -146,15 +153,17 @@ input[type="checkbox"]{
     -webkit-box-direction: normal;
             flex-direction: row;
   }
-  .login-form .action button {
+  .login-form .action button,
+  .login-form .action .register-vehicle-btn{
+    font-size: large;
     width: 100%;
     border: none;
     padding: 18px;
     font-family: 'Rubik', sans-serif;
     cursor: pointer;
     text-transform: uppercase;
-    background: #e8e9ec;
-    color: rgb(0, 0, 0);
+    background: #0040ff;
+    color: rgb(255, 255, 255);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 0;
     letter-spacing: 0.2px;
@@ -162,19 +171,12 @@ input[type="checkbox"]{
     -webkit-transition: all .3s;
     transition: all .3s;
   }
-  .login-form .action button:hover {
-    background: #ce0000;
+  .login-form .action button{
+    background: #2f00ff;
   }
-  .login-form .action button:nth-child(2) {
-    background: #30ce00;
-    color: #fff;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 4px;
+  .login-form .action .register-vehicle-btn:hover {
+    background: #2c00f0;
   }
-  .login-form .action button:nth-child(2):hover {
-    background: #00a30e;
-  }
-  
 }
 @media (max-width: 600px) {
    #display-image{

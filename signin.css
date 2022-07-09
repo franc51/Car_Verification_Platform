@@ -11,7 +11,8 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-  color: rgb(61, 92, 92);
+  color: rgb(255, 255, 255);
+  background-color: #003cff;
 }
 nav{
   display: flex;
