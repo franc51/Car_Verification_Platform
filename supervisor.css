@@ -18,7 +18,7 @@ nav{
   display: flex;
   height: 10vh;
   width: 100%;
-  background: #003cff;
+  background: #2f00ff;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 25px;
@@ -69,23 +69,12 @@ input[type="checkbox"]{
   display: none;
 }
 @media (max-width: 2000px){
-  #papa {
-    text-align: center;
-    padding-top: 5vh;
-  }
   nav{
     padding: 0 40px 0 50px;
   }
-  #display-image{
-    width: 54vw;
-    height: 100vh;
-    border: 1px solid black;
-    background-position: center;
-   background-size: contain;
-  }
   .login-form {
     background: rgb(255, 255, 255);
-    width: 60vw;
+    width: 40vw;
     margin: 30px auto;
     display: -webkit-box;
     display: flex;
@@ -101,9 +90,6 @@ input[type="checkbox"]{
   }
   .login-form .content {
     padding: 35px;
-    text-align: center;
-  }
-  .login-form .h2 {
     text-align: center;
   }
   .login-form .input-field {
@@ -154,52 +140,37 @@ input[type="checkbox"]{
     -webkit-box-direction: normal;
             flex-direction: row;
   }
-  .login-form .action button,
-  .login-form .action .register-vehicle-btn{
-    font-size: large;
+  .login-form .action button {
     width: 100%;
     border: none;
     padding: 18px;
     font-family: 'Rubik', sans-serif;
     cursor: pointer;
     text-transform: uppercase;
-    background: #30ce00;
-    color: rgb(255, 255, 255);
+    background: #e8e9ec;
+    color: #777;
     border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 0;
     letter-spacing: 0.2px;
     outline: 0;
     -webkit-transition: all .3s;
     transition: all .3s;
   }
-  .login-form .action .register-vehicle-btn:hover {
-    background: #ff0000;
+  .login-form .action button:hover {
+    background: #d8d8d8;
   }
-  .login-form .action .register-vehicle-btn:nth-child(1) {
-    background: #ff0000;
+  .login-form .action button {
+    background: #2f00ff;
     color: #fff;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 4px;
   }
-  .login-form .action .register-vehicle-btn:nth-child(1):hover {
-    background: #000000;
-  }
-  .login-form .action .register-vehicle-btn:nth-child(2) {
-    background: #30ce00;
-    color: #fff;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 4px;
-  }
-  .login-form .action .register-vehicle-btn:nth-child(2):hover {
-    background: #00ff15;
+  .login-form .action button:hover {
+    background: #ff0000;
   }
   
 }
 @media (max-width: 600px) {
-   #display-image{
-    height: 20vh;
-    
-   }
   .bifa{
     height: 31vh;
     width: 80vw;
@@ -426,21 +397,3 @@ body {
   font-family: 'Rubik', sans-serif;
 }
 
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
-  tr:nth-child(6) {
-    background-color: red;
-  }

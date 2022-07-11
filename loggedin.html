@@ -19,9 +19,10 @@
          <i class="fas fa-bars"></i>
          </label>
          <ul>
-            <li><a  href="loggedin.html">Home</a></li>
-            <li><a class="active" href="database.html">Verify database</a></li>
+            <li><a class="active" href="loggedin.html">Home</a></li>
+            <li><a class="accept" href="database.html">Database</a></li>
             <li><a class="accept" href="signin.html">Sign Out</a></li>
+            <li><a href="about.html">About</a></li>
             
          </ul>
       </nav>
@@ -33,7 +34,10 @@
                <input type="text" placeholder="Name of the owner" autocomplete="nope" name="name">
              </div>
              <div class="input-field">
-               <input type="text" placeholder="vin no." autocomplete="nope" name="vinno">
+              <input type="text" placeholder="phone nr." autocomplete="nope" name="name">
+            </div>
+             <div class="input-field">
+               <input type="text" placeholder="vin nr." autocomplete="nope" name="vinno">
              </div>
              <div class="input-field">
               <input type="text" placeholder="Make" autocomplete="nope">
@@ -70,8 +74,23 @@
               <select name="registration" id="verification">
                 <option value="passed">Passed</option>
                 <option value="rejected">Rejected</option>
-             
               </select> 
+            </div>
+
+            <div>
+              <label name="result"for="cars">Reason of rejection</label>
+              <select name="registration" id="verification">
+                <option value="passed">0</option>
+                <option value="rejected">Engine emissions</option>
+                <option value="rejected">Engine sound</option>
+                <option value="rejected">Wrong paint</option>
+                <option value="rejected">Bad lights</option>
+                <option value="rejected">Rust</option>
+              </select> 
+            </div>
+
+            <div class="input-field">
+              <input type="text" placeholder="details" autocomplete="nope">
             </div>
 
              <div >Please upload a picture of the car:

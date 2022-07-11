@@ -4,7 +4,7 @@
    <head>
       <meta charset="utf-8">
       <title>Car Verification Platform</title>
-      <link rel="stylesheet" href="database.css">
+      <link rel="stylesheet" href="edit_database.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
@@ -21,15 +21,15 @@
          </label>
          <ul>
             <li><a  href="loggedin.html">Home</a></li>
-            <li><a class="active" href="database.html">Database</a></li>
+            <li><a class="active" href="edit_database.html">Database</a></li>
             <li><a class="accept" href="signin.html">Sign Out</a></li>
             <li><a href="about.html">About</a></li>
          </ul>
       </nav>
 
       <div id="papa">
-        <h3>As a security measure, you need the CEO credentials to modify the database.</h3>
-        <p>Click the right or left arrow to swipe between tabs.</p>
+        <h3>Higher level user is signed in, database can be edited.</h3>
+        <p>Click on edit to edit the field, and remove to delete it permanently.</p>
       </div>
 
       <div class="login-form">
@@ -40,6 +40,8 @@
               <th>Vin No.</th>
               <th>Verification</th>
               <th>Date</th>
+              <th>Edit</th>
+              <th>Remove</th>
             </tr>
             <tr>
               
@@ -47,6 +49,8 @@
               <td>EAUZBF49HA036787</td>
               <td>Passed</td>
               <th>27.02.2022</th>
+              <th><a href="#" >Edit</a></th>
+              <th><a href="#" >Remove</a></th>
             </tr>
             <tr>
               
@@ -54,6 +58,8 @@
               <td>YAUZZF49HA036786</td>
               <td>Passed</td>
               <th>15.01.2021</th>
+              <th><a href="#" >Edit</a></th>
+              <th><a href="#" >Remove</a></th>
             </tr>
             <tr>
               
@@ -61,6 +67,8 @@
               <td>ZAUZZF49HA036723</td>
               <td>Passed</td>
               <th>24.07.2021</th>
+              <th><a href="#" >Edit</a></th>
+              <th><a href="#" >Remove</a></th>
             </tr>
             <tr>
               
@@ -68,6 +76,8 @@
               <td>AAUZZF49HA036784</td>
               <td>Passed</td>
               <th>05.04.2022</th>
+              <th><a href="#" >Edit</a></th>
+              <th><a href="#" >Remove</a></th>
             </tr>
             <tr>
               
@@ -75,6 +85,8 @@
               <td>KPUZSF49HA077715</td>
               <td>Rejected</td>
               <th>09.08.2021</th>
+              <th><a href="#" >Edit</a></th>
+              <th><a href="#" >Remove</a></th>
             </tr>
             <tr>
               
@@ -82,6 +94,8 @@
               <td>WAUUUF49HA034474</td>
               <td>Passed</td>
               <th>07.07.2022</th>
+              <th><a href="#" >Edit</a></th>
+              <th><a href="#" >Remove</a></th>
             </tr>
             <tr>
               
@@ -89,6 +103,8 @@
               <td>PAUXXF49HA03569</td>
               <td>Passed</td>
               <th>08.04.2022</th>
+              <th><a href="#" >Edit</a></th>
+              <th><a href="#" >Remove</a></th>
             </tr>
             <tr>
               
@@ -96,6 +112,8 @@
               <td>JAUUUF49HA0339436</td>
               <td>Passed</td>
               <th>025.07.2022</th>
+              <th><a href="#" >Edit</a></th>
+              <th><a href="#" >Remove</a></th>
             </tr>
             <tr>
              
@@ -103,18 +121,12 @@
               <td>MXUUJF49HA033039</td>
               <td>Passed</td>
               <th>07.07.2022</th>
+              <th><a href="#" >Edit</a></th>
+              <th><a href="#" >Remove</a></th>
             </tr>
             
-            
           </table>
-          <div class="action">
-           
-            <input onclick="window.open('/supervisor.html') "type="submit" value="edit database" name="register-form" class="register-vehicle-btn">
-           
-            <input onclick="window.open('/future_appointments.html') "type="submit" value="appointments" name="app" class="register-vehicle-btn">
-           </div>
           </div>
-          
             </body>
          </form>
        </div>

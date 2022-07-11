@@ -175,22 +175,22 @@ input[type="checkbox"]{
   .login-form .action .register-vehicle-btn:hover {
     background: #ff0000;
   }
-  .login-form .action .register-vehicle-btn:nth-child(1) {
+  .login-form .action .register-vehicle-btn:nth-child(2) {
     background: #ff0000;
     color: #fff;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 4px;
   }
-  .login-form .action .register-vehicle-btn:nth-child(1):hover {
+  .login-form .action .register-vehicle-btn:nth-child(2):hover {
     background: #000000;
   }
-  .login-form .action .register-vehicle-btn:nth-child(2) {
+  .login-form .action .register-vehicle-btn:nth-child(3) {
     background: #30ce00;
     color: #fff;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 4px;
   }
-  .login-form .action .register-vehicle-btn:nth-child(2):hover {
+  .login-form .action .register-vehicle-btn:nth-child(3):hover {
     background: #00ff15;
   }
   

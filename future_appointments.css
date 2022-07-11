@@ -185,7 +185,7 @@ input[type="checkbox"]{
     background: #000000;
   }
   .login-form .action .register-vehicle-btn:nth-child(2) {
-    background: #30ce00;
+    background: #003cff;
     color: #fff;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 4px;
